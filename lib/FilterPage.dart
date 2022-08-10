@@ -42,7 +42,13 @@ class _FilterPageState extends State<FilterPage> {
                filindex == 0 ?
                selectFilter()
                 :
-               selectFilter2()
+               selectFilter2(),
+
+            fileterType(),
+            filindex == 0 ?
+            selectFilter()
+                :
+            selectFilter2(),
               // Column(
               //   children: [
               //     Text("Type",
