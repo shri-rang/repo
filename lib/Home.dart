@@ -196,6 +196,19 @@ class _HomePageState extends State<HomePage> {
              },
             ),
          ),
+            Container(
+              width: double.infinity,
+              height:70 ,
+              padding: EdgeInsets.symmetric(   horizontal: 15 ),
+              child: ListView.builder(
+                itemCount: bannerImg.length,
+                scrollDirection: Axis.horizontal,
+                itemBuilder:
+                    (context, index) {
+                  return  bannerWidget(index, bannerImg);
+                },
+              ),
+            ),
           SizedBox(
             height: 10,
           ),
