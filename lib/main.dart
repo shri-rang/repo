@@ -249,11 +249,17 @@ class StepIndicatorDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
-        child: 
-              HomeScreen()
-      ),
+    return Column(
+      children: [
+        Container(
+          child: Center(
+            child:
+                  HomeScreen(),
+
+          ),
+        ),
+        HomeScreen()
+      ],
     );
   }
 }
